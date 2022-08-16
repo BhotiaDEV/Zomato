@@ -1,0 +1,111 @@
+body {
+  margin: auto;
+  padding: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  /* box-sizing: border-box; */
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* header css */
+header {
+  color: #fff;
+  height: 50px;
+  width: 100%;
+  display: inline-block;
+
+  background-color: #3f1813;
+}
+.brand {
+  float: left;
+}
+.brand h1 {
+  margin-top: 8px;
+  margin-left: 10px;
+}
+.socials,
+.goto {
+  float: right;
+  margin-top: 15px;
+  padding: 0 5px;
+}
+.fa-brands {
+  padding: 3px;
+}
+.fa-youtube:hover {
+  color: red;
+}
+.fa-square-facebook:hover {
+  color: blue;
+}
+.fa-instagram:hover {
+  color: #f71831;
+}
+
+/* search css */
+#search {
+  height: 400px;
+  width: 100%;
+  background-image: url("images/lily-banse--YHSwy6uqvk-unsplash.jpg");
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-size: 100% 600px;
+}
+.logo {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  margin-left: 43%;
+  margin-top: 1%;
+  background-color: white;
+  border-radius: 50%;
+  font-size: 55px;
+}
+.logo > span {
+  position: absolute;
+  margin-left: 8%;
+  margin-top: 35%;
+}
+.heading {
+  font-size: 40px;
+  position: absolute;
+  margin-left: 31%;
+  margin-top: 20%;
+  color: white;
+}
+#dropdown {
+  position: absolute;
+  margin-left: 26%;
+  margin-top: 25%;
+  width: 50%;
+  height: 40px;
+}
+
+.cityselect {
+  width: 40%;
+  height: 100%;
+  float: left;
+  font-size: large;
+}
+.restselect {
+  font-size: large;
+  width: 60%;
+  height: 100%;
+  float: left;
+}
+
+/* quicksearch css */
+#quicksearch {
+  height: 600px;
+  width: 100%;
+  border: 2px groove orange;
+}
+
+/* footer css */
+footer {
+  height: 50px;
+  width: 100%;
+  border: 2px solid blue;
+}
