@@ -72,13 +72,13 @@ header {
   font-size: 40px;
   position: absolute;
   margin-left: 31%;
-  margin-top: 20%;
+  margin-top: 18%;
   color: white;
 }
 #dropdown {
   position: absolute;
   margin-left: 26%;
-  margin-top: 25%;
+  margin-top: 23%;
   width: 50%;
   height: 40px;
 }
@@ -94,6 +94,17 @@ header {
   width: 60%;
   height: 100%;
   float: left;
+}
+#searchbar {
+  position: absolute;
+  margin-left: 35%;
+  margin-top: 27%;
+}
+input {
+  text-decoration: none;
+  /* width: 50%; */
+  height: 40px;
+  width: 400px;
 }
 
 /* quicksearch css */
