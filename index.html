@@ -1,54 +1,179 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Zomato</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <script
-      src="https://kit.fontawesome.com/7b665a0a23.js"
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
-    ></script>
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/Zomato_logo.png" href="image/gif" />
+    <title>Zomato</title>
   </head>
   <body>
-    <header>
-      <div class="brand">
-        <h1>Bhotia DEV</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark zomato-color">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">BhotiaDEV</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn zomato-color" type="submit">Search</button>
+          </form>
+        </div>
       </div>
-      <div class="socials">
-        <a href="https://www.facebook.com">
-          <i class="fa-lg fa-brands fa-square-facebook"></i>
-        </a>
-        <a href="https://www.instagram.com">
-          <i class="fa-lg fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://www.youtube.com">
-          <i class="fa-lg fa-brands fa-youtube"></i>
-        </a>
+    </nav>
+    <div class="banner">
+      <div class="banner-brand">
+        <span>BhotiaDEV</span>
       </div>
-      <div class="goto">
-        <a href="#">HOME</a>
-        <a href="#">MENU</a>
-        <a href="#">CONTACT US</a>
+      <div class="banner-details">
+        <h3>Discover the best food & drinks in Delhi NCR</h3>
       </div>
-    </header>
-    <div id="search">
-      <div class="logo">
-        <span>Bhotia!</span>
-      </div>
-      <div class="heading">Find the best place Near You</div>
-      <div id="dropdown">
-        <select class="cityselect">
-          <option>----Select Your City----</option>
-          <option>Delhi</option>
-          <option>Mumbai</option>
-        </select>
-        <select class="restselect">
-          <option>----Select Your Restraurent----</option>
-        </select>
-      </div>
-      <div id="searchbar">
-        <input type="text" />
+      <div class="banner-input">
+        <div class="input-city">
+          <select name="city" class="form-select" id="city">
+            <option value="delhi">!--Select your City--!</option>
+            <option value="delhi">Delhi</option>
+            <option value="new-delhi">New Delhi</option>
+            <option value="mumbai">Mumbai</option>
+          </select>
+        </div>
+        <div class="input-restaurant">
+          <select name="restaurant" class="form-select" id="restaurant">
+            <option value="">!--Select Restaurant--!</option>
+          </select>
+        </div>
       </div>
     </div>
-    <div id="quicksearch"></div>
-    <footer></footer>
+    <div class="item-list">
+      <div class="item">
+        <div class="item-img">
+          <img src="images/burger1.jpg" alt="" />
+        </div>
+        <div class="item-details">
+          <span class="restaurant-name">Burger King</span>
+          <span class="restaurant-details">Burger, Fast Food, Street...</span>
+          <button class="btn zomato-color">See Details...</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-img">
+          <img src="images/burger2.jpg" alt="" />
+        </div>
+        <div class="item-details">
+          <span class="restaurant-name">Burger King</span>
+          <span class="restaurant-details">Burger, Fast Food, Street...</span>
+          <button class="btn zomato-color">See Details...</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-img">
+          <img src="images/burger3.jpg" alt="" />
+        </div>
+        <div class="item-details">
+          <span class="restaurant-name">Burger King</span>
+          <span class="restaurant-details">Burger, Fast Food, Street...</span>
+          <button class="btn zomato-color">See Details...</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-img">
+          <img src="images/burger4.jpg" alt="" />
+        </div>
+        <div class="item-details">
+          <span class="restaurant-name">Burger King</span>
+          <span class="restaurant-details">Burger, Fast Food, Street...</span>
+          <button class="btn zomato-color">See Details...</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-img">
+          <img src="images/burger5.jpg" alt="" />
+        </div>
+        <div class="item-details">
+          <span class="restaurant-name">Burger King</span>
+          <span class="restaurant-details">Burger, Fast Food, Street...</span>
+          <button class="btn zomato-color">See Details...</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="item-img">
+          <img src="images/burger6.jpg" alt="" />
+        </div>
+        <div class="item-details">
+          <span class="restaurant-name">Burger King</span>
+          <span class="restaurant-details">Burger, Fast Food, Street...</span>
+          <button class="btn zomato-color">See Details...</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="copyright">
+        <hr />
+        <span>&copy; Copyright 2022 BhotiaDEV</span>
+        <hr />
+      </div>
+      <div class="foot-div col-3">
+        <h6>ABOUT ZOMATO</h6>
+        <li><a href="#"> Who We Are</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Work With Us</a></li>
+        <li><a href="#">Investor Relations</a></li>
+        <li><a href="#">Report Fraud</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </div>
+      <div class="foot-div col-3">
+        <h6>ABOUT ZOMATO</h6>
+        <li><a href="#"> Who We Are</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Work With Us</a></li>
+        <li><a href="#">Investor Relations</a></li>
+        <li><a href="#">Report Fraud</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </div>
+      <div class="foot-div col-3 no-border">
+        <h6>ABOUT ZOMATO</h6>
+        <li><a href="#"> Who We Are</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Work With Us</a></li>
+        <li><a href="#">Investor Relations</a></li>
+        <li><a href="#">Report Fraud</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </div>
+    </footer>
+    <!-- scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

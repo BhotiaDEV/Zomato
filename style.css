@@ -1,122 +1,389 @@
-body {
-  margin: auto;
-  padding: auto;
-  font-family: Arial, Helvetica, sans-serif;
-  /* box-sizing: border-box; */
+/* ef4f5f */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
 }
 a {
   text-decoration: none;
-  color: white;
 }
-
-/* header css */
-header {
-  color: #fff;
-  height: 50px;
-  width: 100%;
-  display: inline-block;
-
-  background-color: #3f1813;
+.zomato-color {
+  background-color: #ef4f5f;
+  color: #ffffff;
 }
-.brand {
-  float: left;
-}
-.brand h1 {
-  margin-top: 8px;
-  margin-left: 10px;
-}
-.socials,
-.goto {
-  float: right;
-  margin-top: 15px;
-  padding: 0 5px;
-}
-.fa-brands {
-  padding: 3px;
-}
-.fa-youtube:hover {
-  color: red;
-}
-.fa-square-facebook:hover {
-  color: blue;
-}
-.fa-instagram:hover {
-  color: #f71831;
-}
-
-/* search css */
-#search {
-  height: 400px;
-  width: 100%;
-  background-image: url("images/lily-banse--YHSwy6uqvk-unsplash.jpg");
+.banner {
+  padding: 10px;
+  min-height: 400px;
+  /* border: 1px solid black; */
+  background-image: url(images/lily-banse--YHSwy6uqvk-unsplash.jpg);
   background-repeat: no-repeat;
-  /* background-size: cover; */
-  background-size: 100% 600px;
+
+  background-size: 100% 100%;
 }
-.logo {
-  height: 200px;
-  width: 200px;
-  position: absolute;
-  margin-left: 43%;
-  margin-top: 1%;
-  background-color: white;
-  border-radius: 50%;
-  font-size: 55px;
+.banner-brand {
+  position: relative;
+  height: 120px;
+  width: 250px;
+  color: #ef4f5f;
+  font-weight: 300;
+  /* border: 1px red solid; */
+  border-radius: 80px;
+  margin: 20px auto;
+  background-color: whitesmoke;
 }
-.logo > span {
+
+.banner-brand span {
+  font-size: 28px;
+  letter-spacing: 5px;
   position: absolute;
-  margin-left: 8%;
-  margin-top: 35%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.heading {
-  font-size: 40px;
-  position: absolute;
-  margin-left: 31%;
-  margin-top: 18%;
-  color: white;
+.banner-details {
+  width: 100%;
+  text-align: center;
+  margin: 10px auto;
+  /* border: 1px red solid; */
 }
-#dropdown {
-  position: absolute;
-  margin-left: 26%;
-  margin-top: 23%;
+.banner-details h3 {
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 300;
+  /* min-height: 1em; */
+  letter-spacing: 1px;
+}
+.banner-input {
+  min-width: 70%;
+  margin-left: 15%;
+  margin-bottom: 20px;
+  display: inline-block;
+  /* border: 1px white solid; */
+}
+.input-city,
+.input-restaurant {
+  width: 45%;
+  float: left;
+  margin: 10px 2.5%;
+}
+#city,
+#restaurant {
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 7px 0;
+}
+.item-list {
+  display: inline-block;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-top: 30px;
+}
+.item {
+  float: left;
+  margin: 20px 1%;
+  width: 31%;
+  height: 100%;
+  /* height: 160px; */
+  border: 1px solid black;
+}
+.item-img {
+  float: left;
   width: 50%;
-  height: 40px;
-}
-
-.cityselect {
-  width: 40%;
   height: 100%;
-  float: left;
-  font-size: large;
+  /* border: 1px solid blue; */
 }
-.restselect {
-  font-size: large;
-  width: 60%;
+.item-img img {
   height: 100%;
-  float: left;
-}
-#searchbar {
-  position: absolute;
-  margin-left: 35%;
-  margin-top: 27%;
-}
-input {
-  text-decoration: none;
-  /* width: 50%; */
-  height: 40px;
-  width: 400px;
-}
-
-/* quicksearch css */
-#quicksearch {
-  height: 600px;
   width: 100%;
-  border: 2px groove orange;
 }
+.item-details {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 100%;
+  letter-spacing: 1px;
+}
+.restaurant-name {
+  float: left;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
 
-/* footer css */
+  letter-spacing: 0.5px;
+}
+.restaurant-details {
+  width: 100%;
+  float: left;
+
+  padding-bottom: 5px;
+  /* border: 1px black solid; */
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+.item-details button {
+  float: left;
+  margin-top: 5px;
+  font-size: 16px;
+}
 footer {
-  height: 50px;
+  background-color: #444;
+  display: inline-block;
+  /* height: 200px; */
   width: 100%;
-  border: 2px solid blue;
+  color: #ccc;
+  padding: 20px 0;
+}
+.copyright {
+  width: 90%;
+  margin-left: 5%;
+  float: left;
+}
+.copyright hr {
+  width: 30%;
+  float: left;
+}
+.copyright span {
+  padding-top: 3px;
+  width: 40%;
+  float: left;
+  text-align: center;
+}
+
+.foot-div {
+  letter-spacing: 1px;
+  margin-top: 30px;
+  padding-top: 20px 0;
+  padding-left: 5%;
+  border-right: 1px solid #666;
+  float: left;
+  width: 20%;
+}
+.foot-div a {
+  color: #ccc;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+}
+
+.no-border {
+  border: none;
+}
+
+@media screen and (max-width: 956px) and (min-width: 820px) {
+  .item {
+    float: left;
+    margin: 30px 2%;
+    width: 46%;
+    height: 160px;
+    border: 1px solid black;
+  }
+  .item-img img {
+    height: 100%;
+  }
+  .item-details {
+    padding: 15px 15px;
+  }
+  .restaurant-name {
+    font-size: 19px;
+    margin-bottom: 10px;
+  }
+  .restaurant-details {
+    font-size: 16px;
+  }
+  .item-details button {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 819px) and (min-width: 666px) {
+  .banner-input {
+    min-width: 80%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  .input-city,
+  .input-restaurant {
+    width: 95%;
+    float: left;
+    margin: 10px 2.5%;
+  }
+  #city,
+  #restaurant {
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 7px 0;
+  }
+  .item {
+    float: left;
+    margin: 20px 2%;
+    width: 46%;
+    height: 180px;
+    border: 1px solid black;
+  }
+  .item-details {
+    padding: 10px 15px;
+  }
+
+  .foot-div {
+    letter-spacing: 1px;
+    margin-top: 30px;
+    padding-top: 20px 0;
+    padding-left: 5%;
+    border-right: 1px solid #666;
+    float: left;
+    width: 30%;
+  }
+}
+@media screen and (max-width: 666px) and (min-width: 484px) {
+  .banner-input {
+    min-width: 80%;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    display: inline-block;
+    /* border: 1px white solid; */
+  }
+  .input-city,
+  .input-restaurant {
+    width: 100%;
+    float: left;
+    margin: 5px 0;
+  }
+  #city,
+  #restaurant {
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 7px 0;
+  }
+  .item {
+    /* display: inline-block; */
+    margin: 20px 10%;
+    width: 80%;
+    border: 1px solid black;
+  }
+  .item-details {
+    float: left;
+    border: 1px solid green;
+
+    padding-top: 15px;
+    padding-left: 20px;
+  }
+  .restaurant-name {
+    font-size: 24px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  .restaurant-details {
+    font-size: 16px;
+  }
+  .item-details button {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+  .copyright span {
+    font-size: 14px;
+    width: 50%;
+  }
+  .copyright hr {
+    width: 25%;
+  }
+  .foot-div {
+    letter-spacing: 1px;
+    margin-top: 30px;
+    padding-top: 20px 0;
+    padding-left: 5%;
+    border-right: 1px solid #666;
+    float: left;
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  .banner-input {
+    min-width: 90%;
+    margin-left: 5%;
+    margin-bottom: 5px;
+    display: inline-block;
+    /* border: 1px white solid; */
+  }
+  .input-city,
+  .input-restaurant {
+    width: 100%;
+    float: left;
+    margin: 10px 0;
+  }
+  #city,
+  #restaurant {
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 7px 0;
+  }
+  .item {
+    /* display: inline-block; */
+    margin: 20px 15%;
+    width: 70%;
+    height: 400px;
+    border: 1px solid black;
+  }
+  .item-img {
+    width: 100%;
+    height: 250px;
+  }
+  .item-img img {
+    height: 100%;
+  }
+  .item-details {
+    float: left;
+    width: 100%;
+    height: 50%;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  .restaurant-name {
+    /* border: 1px red solid; */
+    width: 100%;
+    float: left;
+    font-size: 20px;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+  }
+  .restaurant-details {
+    float: left;
+    width: 100%;
+    font-size: 13px;
+  }
+  .item-details button {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 13px;
+  }
+  .copyright span {
+    font-size: 12px;
+    width: 50%;
+  }
+  .copyright hr {
+    width: 25%;
+  }
+  .foot-div {
+    letter-spacing: 1px;
+    margin-top: 30px;
+    padding-top: 20px 0;
+    padding-left: 2%;
+    border-right: 1px solid #666;
+    float: left;
+    width: 33%;
+  }
+  .foot-div h6 {
+    font-size: 12px;
+    padding: 5px 0;
+  }
+  .foot-div li {
+    font-size: 8px;
+    padding: 2px 0;
+  }
 }
