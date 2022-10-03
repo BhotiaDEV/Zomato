@@ -4,9 +4,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* body {
-  position: relative;
-} */
 li {
   list-style: none;
 }
@@ -394,14 +391,13 @@ footer {
   }
 }
 #coupon {
-  position: absolute;
+  position: fixed;
   /* display: block; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 300px;
   height: 300px;
-  z-index: 100;
   visibility: hidden;
   background-color: #ef4f5f;
 }
